@@ -1,0 +1,34 @@
+<!-- Main Content -->
+<main class="content-wrapper delayed-display">
+	<section>
+		<h1 class="recipe-title">{{section.displayName}}</h2>
+
+		{{{section.description}}}
+	</section>
+	<section class="appetizers">
+		<h3>In This Section</h3>
+		<ul class="recipes-list two-columns">
+		{{#each recipes}}
+			<li class='recipe-entry'>
+				<a class='recipe-link' href='/recipes/{{section}}/{{techTitle}}'>
+					{{displayName}}<div class='rating stars-{{rating}}'></div>
+				</a>
+			</li>
+		{{/each}}
+		</ul>
+	</section>
+</main>
+
+<!-- Introductory Quote -->
+<div class="intro">
+	<blockquote class="intro-quote">
+		{{section.introQuote.quote}}
+	</blockquote>
+	<cite class="intro-cite">&mdash; {{section.introQuote.author}}</cite>
+</div>
+
+
+<script>
+	const sectionName = location.pathname.split("/").pop();
+	displayIntro(sectionName);
+</script>

@@ -1,0 +1,25 @@
+<!-- Main Content -->
+<main class="content-wrapper">
+	<div id="flower-preview"></div>
+	<h2>Foods in Bloom <span class="subtitle">- A Listing of Edible Flowers</span></h2>
+	<ul class="edible-flowers">
+	{{#each flowers}}
+		<li class='flower-entry' data-img="{{image}}">
+			<h2>{{name}}</h2>
+			<p class='flower-text'>{{descr}}</p>
+		</li>
+	{{/each}}
+	</ul>
+</main>
+
+<script>
+	$(".flower-entry").mouseover(function(event) {
+
+		$("#flower-preview").show().css({
+			backgroundImage: `url(${$(this).data("img")})`,
+			backgroundSize: 'cover',
+			filter: 'opacity(.2)'
+		});
+
+	});
+</script>

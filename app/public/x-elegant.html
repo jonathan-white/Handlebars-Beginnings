@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Junior League of Akron - Beginnings</title>
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="/assets/css/style.css">
+
+	<!-- JQuery -->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+	<!-- Custom scripts -->
+	<script src="/assets/js/sitenav.js"></script>
+	<script src="/assets/js/fetchRecipes.js"></script>
+	<script src="/assets/js/playIntro.js"></script>
+
+</head>
+<body>
+	
+	<div class="bg-shadow"></div>
+	
+	<div class="page-wrapper">
+		
+		<!-- Navbar -->
+		<nav id="navbar"></nav>
+		
+		<!-- Main Content -->
+		<main class="content-wrapper delayed-display">
+			<section>
+				<h1 class="recipe-title">Elegant Beginnings</h2>
+
+				<p>When only the best will do, the appetizers and hors d'oeuvres featured in this special section are exceptional for more refined gatherings&mdash;the "to-die-for" first course at a candlelit dinner, magnificent morsels for grazing at a cocktail party, savory tidbits passed on silver trays, and much more. Luxurious, tasteful entertaining never tasted this good.</p>
+			</section>
+			<section class="appetizers">
+				<h3>In This Section</h3>
+				<ul class="recipes-list two-columns"></ul>
+			</section>
+		</main>
+
+		<!-- Introductory Quote -->
+		<div class="intro">
+			<blockquote class="intro-quote">
+				"I'd rather have roses on my table than diamonds on my neck."
+			</blockquote>
+			<cite class="intro-cite">&mdash; Emma Goldman</cite>
+		</div>
+
+		<!-- Side Navigation -->
+		<aside class="sidenav">
+			<a href="/" class="link-read-more">Beginnings</a>	
+			<ul class="sidenav-links-list"></ul>
+		</aside>
+
+	</div>
+	
+	<script>
+		load_navigation();
+		fetchRecipesBySection('elegant');
+		displayIntro('elegant');
+	</script>
+
+</body>
+</html>

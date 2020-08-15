@@ -1,0 +1,42 @@
+<!-- Main Content -->
+<main class="content-wrapper">
+
+	<section>
+		<!-- Display the recipe title -->
+		<h1 id="recipe-title">{{recipe.displayName}}</h2>
+	</section>
+	<article class="recipe-content">
+		<div class="left-side">
+			<section>
+				<h3>Ingredients</h3>
+
+				<!-- Display ingredients list -->
+				<ul id="recipe-ingredients">
+					{{#each recipe.ingredients}}
+					<li>{{{description}}}</li>
+					{{/each}}
+				</ul>
+			</section>
+			
+			<!-- Display recipe instructions -->
+			<section id="recipe-instructions">{{{recipe.instructions}}}</section>
+		</div>
+		<div class="right-side">
+
+		{{#if recipe.images}}
+			<div id="preview">
+				<img src="{{image}}" alt="{{recipe.displayName}}">
+			</div>
+		{{/if}}
+
+			<!-- Display Randomly generated fact -->
+			<div id="random-fact">
+				{{#if fact.image}}
+				<div><img src="{{fact.image.src}}" alt="{{fact.image.alt}}"></div>
+				{{/if}}
+				<div>{{{fact.info}}}</div>
+			</div>
+
+		</div>
+	</article>
+</main>

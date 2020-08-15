@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Junior League of Akron - Beginnings</title>
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="/assets/css/style.css">
+
+	<!-- JQuery -->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <script src="/assets/js/sitenav.js"></script>
+  <script src="/assets/js/fetchSearchResults.js"></script>
+</head>
+<body>
+
+	<div class="bg-shadow"></div>
+	
+	<div class="page-wrapper">
+		
+		<!-- Navbar -->
+		<nav id="navbar"></nav>
+			
+		<!-- Main Content -->
+		<main class="content-wrapper">
+			<h2 class="search-results-title">Results</h2>
+			<p class="search-results-subtitle"></p>
+			
+			<ul id="searchResults"></ul>
+		</main>
+
+		<!-- Side Navigation -->
+		<aside class="sidenav">
+			<a href="/" class="link-read-more">Beginnings</a>	
+			<ul class="sidenav-links-list"></ul>
+		</aside>
+		
+	</div>
+
+	<script>
+		load_navigation();
+		load_searchResults();
+	</script>
+</body>
+</html>

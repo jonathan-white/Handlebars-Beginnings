@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<title>Junior League of Akron - Beginnings</title>
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="/assets/css/style.css">
+
+	<!-- JQuery -->
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+	<script src="/assets/js/sitenav.js"></script>
+	<script src="/assets/js/contentLoader.js"></script>
+
+</head>
+<body>
+	
+	<div class="bg-shadow"></div>
+	
+	<div class="page-wrapper">
+		
+		<!-- Navbar -->
+		<nav id="navbar"></nav>
+		
+		<!-- Main Content -->
+		<main class="content-wrapper">
+			<section>
+				<!-- Autopopulate Recipe Title -->
+				<h1 id="recipe-title"></h2>
+			</section>
+			<article class="recipe-content">
+				<div class="left-side">
+					<section>
+						<h3>Ingredients</h3>
+
+						<!-- Autopopulate Recipe ingredients -->
+						<ul id="recipe-ingredients"></ul>
+					</section>
+					
+					<!-- Autopopulate Recipe instructions -->
+					<section id="recipe-instructions"></section>
+				</div>
+				<div class="right-side">
+					<!-- Autopopulate a preview image -->
+					<div id="preview"></div>
+
+					<!-- Autopopulate a random fact -->
+					<div id="random-fact"></div>
+				</div>
+			</article>
+		</main>
+
+		<!-- Side Navigation -->
+		<aside class="sidenav">
+			<a href="/" class="link-read-more">Beginnings</a>	
+			<ul class="sidenav-links-list"></ul>
+		</aside>
+
+	</div>
+	
+	<script>
+		load_navigation();
+		load_recipeDetails();
+		load_randomFact();
+	</script>
+
+</body>
+</html>

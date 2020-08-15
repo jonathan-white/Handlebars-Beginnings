@@ -1,0 +1,495 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400');
+
+/* General */
+/* =============================================*/
+
+html {
+	font-family: "Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+	font-size: 20px;
+	line-height: 1.35;
+}
+
+body {
+	box-sizing: border-box;
+	background-image: url(../images/bg/645853706804660.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-color: black;
+	color: white;
+	position: relative;
+	margin: 0;
+}
+
+main h3 {
+	margin-top: 50px;
+}
+
+ul {
+	padding-inline-start: 0;
+}
+
+li {
+	list-style: none;
+}
+
+/* Wrappers */
+/* =============================================*/
+
+.content-wrapper {
+	position: relative;
+	margin: 0 auto;
+	width: 65%;
+	margin-left: 375px;
+	height: 100%;
+	min-height: 85vh;
+}
+
+.bg-shadow {
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+	background-image: linear-gradient(to right, transparent 40%, #000);
+	z-index: -999;
+}
+
+/* Links */
+/* =============================================*/
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+
+.home-link, .link-read-more {
+	font-family: Montserrat, sans-serif;
+	font-weight: 800;
+	text-align: center;
+	width: 300px;
+	display: block;
+	font-size: 27px;
+	text-shadow: 0 0 20px purple;
+}
+
+/* Edible Flowers */
+/* =============================================*/
+
+.edible-flowers {
+	font-style: italic;
+}
+
+.edible-flowers h2 {
+	font-family: serif;
+}
+
+.edible-flowers .flower-text {
+	color: #c2c2c2;
+}
+
+#flower-preview {
+  position: fixed;
+  top: 80px;
+  left: 50%;
+  transform: translate(-30%);
+  width: 60%;
+  min-height: 500px;
+  border-radius: 20px;
+	z-index: -1;
+}
+
+/* Sidenav */
+/* =============================================*/
+
+.sidenav {
+	position: fixed;
+	left: 10px;
+	top: 8px;
+	z-index: 2;
+}
+
+.sidenav-links-list {
+	padding-inline-start: 10px;
+  padding-top: 20px;
+  width: 320px;
+  height: 490px;
+	background-color: rgb(30, 10, 30);
+	border-radius: 10px;
+	border: 1px solid #bbb;
+}
+
+.sidenav-link:hover {
+	color: rgb(255, 99, 0);
+}
+
+.sidenav-link {
+	width: 100%;
+	border-bottom: 1px solid #888;
+}
+
+.sidenav-item {
+	margin-right: 10px;
+	padding: 10px 0px;
+	border-bottom: 1px solid #888;
+}
+
+.sidenav-link:last-of-type .sidenav-item {
+	border-bottom: 0;
+}
+
+.sidenav-item:hover {
+	cursor: pointer;
+	background-color: rgba(153, 51, 153,.2);
+}
+.sidenav-link:first-of-type .sidenav-item:hover {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.sidenav-link:last-of-type .sidenav-item:hover {
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+/* Blockquotes */
+/* =============================================*/
+
+blockquote {
+	font-family: serif;
+	font-style: italic;
+	color: #bbb;
+}
+
+.vision-statement {
+	background: linear-gradient(to right, #6cf,#da1b60);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-box-decoration-break: clone;
+	font-weight: 700;
+}
+
+.intro-quote::first-letter {
+	font-weight: bold;
+	color: #2c2cbf;
+	font-size: 30px;
+}
+
+.intro-cite {
+	margin-left: 200px;
+}
+
+/* Decades */
+/* =============================================*/
+
+.decade-title {
+	color: #3cf;
+	margin-block-end: 0;
+}
+
+.decade-list {
+  margin-block-start: .5em;
+}
+
+/* Recipe Lists */
+/* =============================================*/
+.appetizers h3 {
+	text-decoration: underline;
+}
+
+.two-columns {
+	columns: 2;
+	-webkit-columns: 2;
+	-moz-columns: 2;
+}
+
+.recipe-entry {
+	display: flex;
+	flex-flow: row;
+	margin: 10px 0;
+}
+
+.recipe-entry a:hover {
+	color: rgb(255, 99, 0);
+	text-shadow: 0 0 10px purple;
+}
+
+.recipe-link {
+	position: relative;
+}
+
+#recipe-ingredients a {
+	color: #f93;
+}
+
+/* Ratings System */
+/* =============================================*/
+.rating {
+	position: absolute;
+	left: calc(100% + 5px);
+	display: inline-block;
+	background-image: url(../images/helper/stars-fill-md.png);
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+  height: 16px;
+  width: 0px;
+	margin: 5px 0;
+}
+
+.rating.stars-0 {	width: 0px; }
+.rating.stars-1 {	width: 16px; }
+.rating.stars-2 {	width: 32px; }
+.rating.stars-3 {	width: 48px; }
+.rating.stars-4 {	width: 64px; }
+.rating.stars-5 {	width: 80px; }
+
+/* Images */
+/* =============================================*/
+
+/* Home Page */
+.akron-images div {
+	margin-bottom: 30px;
+}
+
+.akron-images img {
+	width: 550px;
+	border: 1px solid #fff;
+  border-radius: 2px;
+}
+
+/* Landing Page Intro */
+/* =============================================*/
+
+.intro {
+	display: none;
+}
+
+.intro.show {
+	display: block;
+	position: absolute;
+	top: 200px;
+	left: 60%;
+	transform: translate(-50%,-60%);
+	padding-bottom: 20px;
+	animation: show_quote 10s ease-out forwards;
+	opacity: 0;
+	border-width: 3px;
+	border-style: solid;
+	border-image: linear-gradient(to right, #2c2cbf, #2c2cbf) 1 100% / 2;
+}
+
+.intro.show::before {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 150%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: rgba(0,0,0,.7);
+  border-radius: 20px;
+  z-index: -1;
+}
+
+.content-wrapper.delayed-display {
+	opacity: 0;
+	animation: show_content 2s 10s ease-in forwards;
+}
+
+@keyframes show_quote {
+	0% { opacity: 0; }
+	10% { opacity: 0; }
+	50% { opacity: 1; }
+	100% { opacity: 0; }
+}
+
+@keyframes show_content {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+/* Credits and Acknowledgments */
+/* =============================================*/
+
+.credit-text {
+	font-style: italic;
+}
+
+.book-title {
+	font-style: normal;
+	background: linear-gradient(to right, #ff8a00,#da1b60);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-box-decoration-break: clone;
+}
+
+.credit-category {
+	font-style: italic;
+	color: #39f;
+}
+
+.credits-list li {
+	margin-bottom: 20px;
+}
+
+.sublist {
+	padding-inline-start: 40px;
+}
+
+/* Navbar */
+/* =============================================*/
+#navbar {
+	display: flex;
+	justify-content: flex-end;
+	position: sticky;
+	top: 0;
+	height: 40px;
+	width: 100%;
+	background: linear-gradient(to right, transparent 25%, #fff);
+	z-index: 1;
+}
+
+#navbar a {
+	margin: 0 10px;
+	padding-top: 5px;
+	color: #000;
+}
+
+#navbar a:hover {
+	color: #da1b24;
+	-webkit-text-fill-color: #da1b24;
+}
+
+/* 404 Error Page */
+/* =============================================*/
+.err-image {
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.err-image img {
+	width: 650px;
+}
+
+/* Search */
+/* =============================================*/
+.search {
+	position: relative;	
+	width: 300px;
+	margin-right: 30px;
+}
+
+#searchbox {
+  width: 300px;
+  border-radius: 20% / 60px;
+  height: 26px;
+  margin: 5px 0;
+  outline: none;
+  padding: 0 10px;
+  font-size: 16px;
+  color: purple;
+  border: 1px solid #aaa;
+  background-color: rgba(255,255,255,.8);
+}
+
+#searchbox:focus {
+	box-shadow: 0 0 7px purple;
+}
+
+#quick-search-results {
+  position: absolute;
+  top: 33px;
+  width: 100%;
+  left: 11px;
+  background-color: #fff;
+  border-radius: 2px;
+}
+
+#navbar .results-link {
+	margin: 0;
+	padding: 0;
+}
+
+.results-item {
+	padding: 10px;
+}
+
+.results-item:hover {
+	background-color: #ddd;
+}
+
+/* Recipe Pages */
+/* =============================================*/
+
+#preview {
+	margin-left: 20px;
+  position: relative;
+  padding: 2px 2px;
+  border-radius: 1em;
+  height: 300px;
+}
+
+#preview img{
+	width: 300px;
+	border-radius: 50%;
+	border: 3px solid #aaa;
+}
+
+.recipe-content {
+	display: flex;
+	flex-direction: row;
+}
+
+.recipe-content .right-side {
+	display: flex;
+	flex-direction: column;
+}
+
+#random-fact {
+  position: relative;
+  width: 160px;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 18px;
+  background-color: rgba(255,255,255,.7);
+  border: 1px solid #000;
+  border-radius: 3px;
+  color: #03033a;
+  font-size: 14px;
+  font-style: italic;
+  font-family: serif;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#random-fact::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,.2);
+  top: -6px;
+  left: -6px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+#random-fact img {
+  position: relative;
+  height: 75px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Flowers */
+/* =============================================*/
+
+.subtitle {
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: serif;
+	font-style: italic;
+}

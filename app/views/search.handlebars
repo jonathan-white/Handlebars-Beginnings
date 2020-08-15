@@ -1,0 +1,66 @@
+<!-- Main Content -->
+<main class="content-wrapper">
+	<h2 class="search-results-title">Results</h2>
+{{#if noResults}}
+	<h2>No Matches</h2>
+{{else}}
+	<p class="search-results-subtitle">Recipes found for "{{query}}" in the collection.</p>
+{{/if}}
+	
+	<ul id="searchResults">
+	{{#if results.title}}
+		<h2>{{results.title.length}} Title Match(es)</h2>
+		{{#each results.title}}
+		<li class="recipe-entry">
+			<a class="recipe-link" href="/recipes/{{section}}/{{techTitle}}">
+				{{displayName}}<div class="rating stars-{{rating}}"></div>
+			</a>
+		</li>
+		{{/each}}
+	{{/if}}
+
+	{{#if results.ingredients}}
+		<h2>{{results.ingredients.length}} Ingredient Match(es)</h2>
+		{{#each results.ingredients}}
+		<li class="recipe-entry">
+			<a class="recipe-link" href="/recipes/{{section}}/{{techTitle}}">
+				{{displayName}}<div class="rating stars-{{rating}}"></div>
+			</a>
+		</li>
+		{{/each}}
+	{{/if}}
+
+	{{#if results.category}}
+		<h2>{{results.category.length}} Category Match(es)</h2>
+		{{#each results.category}}
+		<li class="recipe-entry">
+			<a class="recipe-link" href="/recipes/{{section}}/{{techTitle}}">
+				{{displayName}}<div class="rating stars-{{rating}}"></div>
+			</a>
+		</li>
+		{{/each}}
+	{{/if}}
+
+	{{#if results.keyword}}
+		<h2>{{results.keyword.length}} Keyword Match(es)</h2>
+		{{#each results.keyword}}
+		<li class="recipe-entry">
+			<a class="recipe-link" href="/recipes/{{section}}/{{techTitle}}">
+				{{displayName}}<div class="rating stars-{{rating}}"></div>
+			</a>
+		</li>
+		{{/each}}
+	{{/if}}
+
+	{{#if results.rating}}
+		<h2>{{results.rating.length}} Rating Match(es)</h2>
+		{{#each results.rating}}
+		<li class="recipe-entry">
+			<a class="recipe-link" href="/recipes/{{section}}/{{techTitle}}">
+				{{displayName}}<div class="rating stars-{{rating}}"></div>
+			</a>
+		</li>
+		{{/each}}
+	{{/if}}
+	</ul>
+</main>
