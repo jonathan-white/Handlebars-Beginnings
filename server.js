@@ -9,13 +9,11 @@ const logger = require("morgan");
 const app = express();
 const PORT = process.env.PORT || 8080;
 
-
 // Setup data Middleware
 // ========================================================
 app.use(logger("dev"));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 
 // Setup Static Public
 // ========================================================
@@ -30,7 +28,6 @@ app.engine("handlebars", exphbs({
 }));
 app.set('view engine', "handlebars");
 
-
 // HTML Routes Middleware
 // ========================================================
 const htmlRoutes = require("./app/routing/htmlRoutes");
@@ -40,7 +37,6 @@ app.use("/", htmlRoutes);
 // ========================================================
 const apiRoutes = require("./app/routing/apiRoutes");
 app.use("/", apiRoutes);
-
 
 // Start Listenting
 // ========================================================
